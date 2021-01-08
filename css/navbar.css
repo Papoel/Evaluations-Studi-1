@@ -1,0 +1,23 @@
+.nav-link {
+    font-size: 2rem;
+}
+
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+nav ul {
+    margin-left: auto;
+    font-size: 1rem;
+}
+
+.navbar-toggler {
+    text-align: center;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: chartreuse;
+    font-size: 2.5rem;
+}

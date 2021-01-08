@@ -1,0 +1,78 @@
+/* Générales */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+:root {
+    --font-main: 'Montserrat Alternates', sans-serif;
+    --font-second: 'Dancing Script', cursive;
+    --font-third: 'Kurale', serif;
+    --color-main: crimson;
+}
+
+body {
+    /* font-family: var(--font-main); */
+    font-style: italic;
+    font-weight: 400;
+}
+
+header .row {
+    background-image: url(../images/bg-top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    background-position: center;
+    align-items: center;
+}
+
+header .formReservation {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+}
+
+h1.title {
+    color: white;
+    margin-left: 1rem;
+}
+
+h2.slogan {
+    color: #c9f847;
+    font-style: italic;
+    font-family: var(--font-second);
+    font-size: 3rem;
+}
+
+h2.slogan span {
+    font-family: var(--font-second);
+    color: #fff;
+    font-size: 5rem;
+    font-style: italic;
+}
+
+span.letter-style {
+    color: var(--color-main);
+    text-transform: uppercase;
+    font-family: var(--font-third);
+    font-size: 4rem;
+}
+
+p.section-title {
+    color: #262626;
+    font-size: 2.5rem;
+    font-family: var(--font-third);
+}
+
+.title-article {
+    color: #262626;
+}
+
+.blockquote-footer {
+    font-size: 1.2rem;
+}
