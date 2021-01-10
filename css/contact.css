@@ -1,3 +1,8 @@
+section {
+    height: 95vh;
+}
+
+
 label {
     font-size: 2rem;
     font-family: var(--font-nav);
