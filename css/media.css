@@ -38,7 +38,11 @@
     }
 
     p.section-title {
-        font-size: 1.6rem;
+        font-size: 2.6rem;
+    }
+
+    .blockquote-footer {
+        font-size: 1.3rem;
     }
 
     .card-photo {
@@ -52,9 +56,9 @@
 @media (max-width: 576px) {
 
     div.formReservation {
-        background-image:linear-gradient(125deg, #a72879, #064497);
-        ;
+        background-image: linear-gradient(125deg, #a72879, #064497);
     }
+
     body {
         width: 100%;
         height: 100%;
@@ -93,9 +97,14 @@
         font-style: italic;
     }
 
+    .blockquote-footer {
+        font-size: 1.2rem;
+    }
+
     .article-title-words {
         color: #262626;
         font-size: 2rem;
         font-style: italic;
     }
+
 }

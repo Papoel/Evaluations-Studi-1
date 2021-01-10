@@ -15,6 +15,7 @@
     --font-nav: 'Cutive', serif;
     --font-nav-maj: 'Vast Shadow', cursive;
     --color-main: crimson;
+    --linear-color: linear-gradient(125deg, #a72879a5, #064497a5);
 }
 
 body {
@@ -70,7 +71,9 @@ span.letter-style {
 }
 
 .blockquote-footer {
-    font-size: 1.2rem;
+    color: #262626;
+    font-size: 1.6rem;
+    font-family: var(--font-third);
 }
 
 /*+ Bouton Style  */
@@ -80,8 +83,8 @@ header .btn {
     padding: 2rem;
 }
 
-.btn {
+/* .btn {
     color: #fff;
     font-size: 1rem;
-}
+} */
 
