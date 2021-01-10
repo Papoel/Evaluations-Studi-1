@@ -7,7 +7,10 @@
     <!-- description du site -->
     <meta name="description"
         content="L'association Secret Défense vient en aide au sans domicile fixe en effectuant des collectes de vêtements tout au long de l'année mais principalement l'hiver">
-    <!-- icone -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
     <!-- Police Montserrat -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,27 +18,49 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,400;0,500;0,700;1,200;1,400&display=swap"
         rel="stylesheet">
 
+    <!-- Police Cutive -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+
+    <!-- Police Dancing Script -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- Police Vast Shadow -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+
+    <!-- Police Kurale -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!-- mon css -->
     <link rel="stylesheet" href="css/base.css">
-    <!-- <link rel="stylesheet" href="css/header.css"> -->
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/media.css">
+
+    <!-- Icone -->
+    <link rel="icon" href="images/helping-hand.svg">
+
+    <!-- Titre de la page -->
     <title>Secret DeFense</title>
 </head>
 
 <body id="top">
 
-    <!--? ------------------ Navbar  ------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!--? ------------------------------------- Navbar  -------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#top">
-                <span class="letter-style">s</span>ans
-                <span class="letter-style">d</span>é<span class="letter-style">f</span>ense
+                <span class="letter-style">s</span><span class="name-association">ans</span>
+                <span class="letter-style">d</span><span class="name-association">é</span><span
+                    class="letter-style">f</span><span class="name-association">ense</span>
+                <img src="images/helping-hand.svg">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -48,87 +73,158 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Accueil</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aide.html">Comment Aider</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- - Formulaire de contatct -->
-<form id="formulaire">
-    <h2>Formulaire d'inscription à l'Association Sans déFense</h2>
+    <div class="mt-5">
+        <form class="container">
 
-    <div>
-        <label for="lastname">Nom:</label>
-        <input type="text" name="lastname" placeholder="Votre nom" pattern="^[( )a-zA-Z]+$" required />
+            <h1 class="mb-3 fw-bold">Nous contacter</h1>
+
+            <div class="mb-3">
+                <label for="lastname" class="form-label">Nom:</label>
+                <input 
+                    type="text" 
+                    id="lastname" 
+                    class="form-control form-control-lg"
+                    placeholder="Votre nom" 
+                    pattern="^[( )a-zA-Z]+$" 
+                    required 
+                />
+            </div>
+
+            <div class="mb-3">
+                <label for="firstname" class="form-label">Prénom:</label>
+                <input 
+                    type="text" 
+                    id="firstname" 
+                    class="form-control form-control-lg"
+                    placeholder="Votre prénom" 
+                    pattern="^[( )a-zA-Z]+$"
+                    required 
+                />
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="mail" class="form-label">Mail:</label>
+                <input 
+                    type="email" 
+                    id="mail" 
+                    class="form-control form-control-lg"
+                    placeholder="roro.sensei@studi.fr"
+                    pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+                    required 
+                />
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Telephone:</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    class="form-control form-control-lg"
+                    placeholder="+33610111213" 
+                    pattern="^\+?(?:[0-9]??).{5,14}[0-9]$"
+                    required 
+                />
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Votre Message :</label>
+                <textarea class="form-control form-control-lg" id="message" rows="3" placeholder="Votre message ici"></textarea>
+            </div>
+
+            <div class="mt-3">
+                <button class="mt-5 submit-btn w-100">S'inscrire</button>
+            </div>
+
+        </form>
     </div>
 
-    <div>
-        <label for="firstname">Nom:</label>
-        <input type="text" name="firstname" class="name" placeholder="Votre prénom" pattern="^[( )a-zA-Z]+$" required />
-    </div>
 
+
+    <!-- - Formulaire de contatct à garder -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- //////////////////////////////////////////////////// -->
+    <!-- <form id="formulaire">
+        <h1>Formulaire d'inscription à l'Association Sans déFense</h1>
+
+        <div>
+            <label for="lastname">Nom:</label>
+            <input type="text" name="lastname" placeholder="Votre nom" pattern="^[( )a-zA-Z]+$" required />
+        </div>
+
+        <div>
+            <label for="firstname">Prénom:</label>
+            <input type="text" name="firstname" class="name" placeholder="Votre prénom" pattern="^[( )a-zA-Z]+$"
+                required />
+        </div>
+ -->
     <!-- Source de confirmation du mot de passe en html : https://stackoverrun.com/fr/q/9156834 -->
-    <div>
-        <label for="password">Mot de passe:</label>
-        <input 
-            id="password" 
-            name="password" type="password" 
-            pattern="^\S{6,}$"
-            placeholder="Votre mot de passe" required
-            onchange=
-                "this.setCustomValidity(this.validity.patternMismatch ? 
+    <!-- <div>
+            <label for="password">Mot de passe:</label>
+            <input id="password" name="password" type="password" pattern="^\S{6,}$" placeholder="Votre mot de passe"
+                required onchange="this.setCustomValidity(this.validity.patternMismatch ? 
                 'Le mot de passe doit comporter 6 caractères au minimum.' : ''); 
-                if(this.checkValidity()) form.password_two.pattern = this.value;"
-        >
-    </div>
-    <div>
-        <label for="password">Confirmation du mot de passe:</label>
-        <input 
-            id="password_two" 
-            name="password_two" 
-            type="password" 
-            pattern="^\S{6,}$"
-            placeholder="Vérification du mot de passe" required
-            onchange=
-                "this.setCustomValidity(this.validity.patternMismatch ? 
-                'Le mot de passe doit être identique' : '');"
-        >
-    </div>
+                if(this.checkValidity()) form.password_two.pattern = this.value;">
+        </div>
+        <div>
+            <label for="password">Confirmation du mot de passe:</label>
+            <input id="password_two" name="password_two" type="password" pattern="^\S{6,}$"
+                placeholder="Vérification du mot de passe" required onchange="this.setCustomValidity(this.validity.patternMismatch ? 
+                'Le mot de passe doit être identique' : '');">
+        </div>
 
-    <div>
-        <label for="mail">Mail:</label>
-        <input type="email" name="mail" class="mail" placeholder="ola@nordmann.no"
-            pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" required />
-    </div>
+        <div>
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" class="mail" placeholder="ola@nordmann.no"
+                pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+                required />
+        </div>
 
-    <div>
-        <label for="phone">Telephone:</label>
-        <input type="tel" name="phone" placeholder="+33610111213" pattern="^\+?(?:[0-9]??).{5,14}[0-9]$" required />
-    </div>
+        <div>
+            <label for="phone">Telephone:</label>
+            <input type="tel" name="phone" placeholder="+33610111213" pattern="^\+?(?:[0-9]??).{5,14}[0-9]$" required />
+        </div>
 
-    <div>
-        <label for="date">Date de naissance:</label>
-        <input type="date" name="date" min="1930-01-01" max="2003-01-01" required />
-    </div>
+        <div>
+            <label for="date">Date de naissance:</label>
+            <input type="date" name="date" min="1930-01-01" max="2003-01-01" required />
+        </div>
 
-    <div>
-        <input class="btn-envoi" value="Envoyer"></input>
-    </div>
+          <div class="d-grid">
+              <a href="#evenements" class="btn btn-outline-info m-3">Voir les Evenements</a>
+          </div> 
+        </form>
+-->
 
     <!-- -------------------------------------------- -->
 
-    
-    <!-- -------------------------------------------- -->
-</form>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-          integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-          integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
-      </script>
-    </body>
-    </html>
+    <!-- -------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

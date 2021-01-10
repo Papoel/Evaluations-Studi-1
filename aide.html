@@ -7,7 +7,10 @@
   <!-- description du site -->
   <meta name="description"
     content="L'association Secret Défense vient en aide au sans domicile fixe en effectuant des collectes de vêtements tout au long de l'année mais principalement l'hiver">
-  <!-- icone -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
   <!-- Police Montserrat -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,9 +18,17 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,400;0,500;0,700;1,200;1,400&display=swap"
     rel="stylesheet">
 
+  <!-- Police Cutive -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+
   <!-- Police Dancing Script -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Police Vast Shadow -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
 
   <!-- Police Kurale -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,6 +42,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/article.css">
+  <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/media.css">
 
   <!-- Icone -->
@@ -42,13 +54,14 @@
 
 <body>
 
-  <!--? ------------------ Navbar  ------------------------->
+  <!--? ------------------------------------- Navbar  -------------------------------------------->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#top">
-        <img src="images/helping-hand.svg" alt="" srcset="">
-        <span class="letter-style">s</span>ans
-        <span class="letter-style">d</span>é<span class="letter-style">f</span>ense
+        <span class="letter-style">s</span><span class="name-association">ans</span>
+        <span class="letter-style">d</span><span class="name-association">é</span><span
+        class="letter-style">f</span><span class="name-association">ense</span>
+        <img src="images/helping-hand.svg">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -68,7 +81,6 @@
       </div>
     </div>
   </nav>
-
   <!-- -------------- INFORMATIONS ------------------- -->
   <section id="articles mt-5">
     <article class="container">
@@ -84,7 +96,7 @@
       </p>
 
       <div class="row">
-        <img class="photo-article img-fluid" src="images/benevoles.jpg" alt="">
+        <img class="photo-article img-fluid" src="images/benevoles.jpg">
       </div>
 
       <p class="article lead">
@@ -164,6 +176,9 @@
       <hr>
     </article>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
 
 </body>
 

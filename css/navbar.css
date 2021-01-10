@@ -1,25 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
-
 a.navbar-brand>span.letter-style {
     color: #0dcaf0;
-    font-family: 'Vast Shadow', cursive;
+    font-family: var(--font-nav-maj);
 }
 
 
 .name-association {
     font-size: 1.5rem;
     font-style: normal;
-    font-family: 'Cutive',serif;
+    font-family: var(--font-nav);
     font-style: italic;
     letter-spacing: 2px;
 }
 
 
 .nav-link {
-    font-size: 2rem;
+    font-family: var(--font-third);
+    font-style: normal;
+    font-size: 1.7rem;
 }
 
+ul.navbar-nav>li.nav-item>a.nav-link:hover {
+    color: #0dcaf0;
+}
 
 .navbar-brand img {
     max-height: 50px;
