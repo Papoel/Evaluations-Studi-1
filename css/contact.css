@@ -6,7 +6,7 @@ label {
     font-size: 2rem;
     font-family: var(--font-nav);
     font-style: normal;
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: var(--linear-color);
 }
@@ -23,7 +23,7 @@ input[type=tel],
 
 
 h1 {
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: var(--linear-color);
     text-transform: uppercase;
