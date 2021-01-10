@@ -76,15 +76,40 @@ span.letter-style {
     font-family: var(--font-third);
 }
 
-/*+ Bouton Style  */
 header .btn {
     color: #fff;
     font-size: 2.5rem;
     padding: 2rem;
 }
 
-/* .btn {
-    color: #fff;
-    font-size: 1rem;
-} */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-image: linear-gradient(125deg, #a72879a5, #064497a5);
+    ;
+}
 
+footer>p {
+    padding: auto;
+    color: white;
+    font-size: 2.2rem;
+    margin: 0;
+    font-family: Var(--font-main);
+}
+
+footer>p>a {
+    color: white;
+    font-size: 2.2rem;
+    text-decoration: none;
+    font-style: normal;
+}
+
+footer>p>a:hover {
+    color: rgba(13, 202, 240, 0.7);
+    transition: all 0.4s ease-in-out;
+}

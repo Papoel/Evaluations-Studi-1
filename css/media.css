@@ -51,6 +51,18 @@
         object-fit: contain;
         max-height: 350px;
     }
+
+    footer {
+        height: 3rem;
+    }
+
+    footer>p {
+        font-size: 1.6rem;
+    }
+
+    footer>p>a {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 576px) {
